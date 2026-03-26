@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rent A Pet - Graphics</title>
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+   	    background-image: url("Images/2colback.png");
+   	    background-repeat: repeat-y;
+   	    background-position: top center;
+
+        }
+
+        .rollover {
+            margin-bottom: 20px;
+        }
+
+        #thumbs, #image {
+            width: 900px;
+            text-align: center;
+            margin: 0 auto;
+            color: #000;
+        }
+
+        #thumbs {
+            margin-top: 10px;
+        }
+
+        #thumbs img {
+            border: solid 1px #000;
+            margin: 5px;
+        }
+
+        #image {
+            height: 500px;
+        }
+
+        .instructions {
+            font-style: italic;
+        }
+
+        .background-preview {
+            margin-top: 20px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var print1 = new Image();
+        var print2 = new Image();
+        var logo1 = new Image();
+        var logo2 = new Image();
+
+        var imgArray = new Array(
+            'Pet1Lg.jpg',
+            'Pig1Lg.jpg',
+            'CatandDogLg.jpg',
+            'HuntingDogsLg.jpg'
+        );
+
+        var titleArray = new Array(
+            'Woman and Small Dog',
+            'Pot Belly Pig',
+            'Cat and Dog Together',
+            'Two Dogs Portrait'
+        );
+
+        var imgPath = "Images/FullSize/";
+
+        function preloadImages() {
+            print1.src = "Images/print1.jpg";
+            print2.src = "Images/print2.jpg";
+            logo1.src = "Images/logo1.jpg";
+            logo2.src = "Images/logo2.jpg";
+
+            for (var i = 0; i < imgArray.length; i++) {
+                var tmpImg = new Image();
+                tmpImg.src = imgPath + imgArray[i];
+            }
+        }
+
+        function swapImage(imgID) {
+            var theImage = document.getElementById("theImage");
+            var textDiv = document.getElementById("bottomText");
+
+            theImage.src = imgPath + imgArray[imgID];
+            textDiv.innerHTML = titleArray[imgID];
+        }
+    </script>
+</head>
+
+<body onload="preloadImages()">
+
+
+    <div class="rollover">
+        <a href="#"
+           onmouseover="document.getElementById('print').src='Images/print2.png';"
+           onmouseout="document.getElementById('print').src='Images/print1.png';">
+            <img src="Images/print1.png" alt="Print Page button" width="200" height="200" id="print">
+        </a>
+    </div>
+
+    <div class="rollover">
+        <a href="#"
+           onmouseover="document.getElementById('logo').src='Images/logo2.png';"
+           onmouseout="document.getElementById('logo').src='Images/logo1.png';">
+            <img src="Images/logo1.png" alt="Rent A Pet logo" width="133" height="126" id="logo">
+        </a>
+    </div>
+
+
+<div id="thumbs">
+    <img src="Images/Thumbnails/Pet1Lg.jpg" width="150" height="100" alt="Woman and small dog" onmouseover="swapImage(0);">
+    
+    <img src="Images/Thumbnails/Pig1Lg.jpg" width="150" height="100" alt="Pot belly pig" onmouseover="swapImage(1);">
+    
+    <img src="Images/Thumbnails/CatandDogLg.jpg" width="150" height="100" alt="Cat and dog together" onmouseover="swapImage(2);">
+    
+    <img src="Images/Thumbnails/HuntingDogsLg.jpg" width="150" height="100" alt="Two dogs" onmouseover="swapImage(3);">
+</div>
+
+    <div id="image">
+        <img id="theImage" src="Images/FullSize/Pet1Lg.jpg" alt="Woman and small dog">
+        <h3 id="bottomText">Woman and Small Dog</h3>
+    </div>
+
+
+</body>
+</html>
