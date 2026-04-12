@@ -72,7 +72,7 @@
             'Two Dogs Portrait'
         );
 
-        var imgPath = "Images/FullSize/";
+        var imgPath = "Images/Fullsize/";
 
         function preloadImages() {
             print1.src = "Images/print1.jpg";
@@ -96,7 +96,7 @@
     </script>
 </head>
 
-<body onload="preloadImages()">
+<body onload="preloadImages(); swapImage(0);">
 
 
     <div class="rollover">
@@ -130,9 +130,10 @@
          alt="Two dogs" onmouseover="swapImage(3);">
 </div>
 
-<div id="image">
-    <img id="theImage" src="Images/FullSize/Pet1Lg.jpg" alt="Woman and small dog">
-    <h3 id="bottomText">Woman and Small Dog</h3>
+<img id="theImage"
+     src="/INFO2420/Project6/Images/Fullsize/Pet1Lg.jpg"
+     alt="Woman and small dog">
+<h3 id="bottomText"></h3>
 </div>
 
 </body>
