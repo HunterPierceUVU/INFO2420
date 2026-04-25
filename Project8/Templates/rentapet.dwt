@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Rent A Pet - Home</title>
+    <!-- TemplateEndEditable -->
+	<link rel="stylesheet" href="../print.css" media="print">
+    <link rel="stylesheet" href="../mystyles.css">
+    <script src="../myscripts.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body onload="preloadImages()">
+
+<div id="container">
+
+    <header>
+        <a href="#"
+           onmouseover="logoHover()"
+           onmouseout="logoOut()">
+            <img src="../Images/logo1.png" alt="Rent A Pet logo" width="133" height="126" id="logo">
+        </a>
+
+        <img src="../Images/banner.png" alt="Banner" id="banner">
+
+        <nav>
+            <a href="../Home.html">Home</a>
+            <a href="../AboutUs.html">About Us</a>
+            <a href="../Tributes.html">Tributes</a>
+            <a href="../Survey.html">Survey</a>
+            <a href="../Links.html">Favorites</a>
+        </nav>
+    </header>
+
+    <section>
+        <article><!-- TemplateBeginEditable name="Pagecontent" -->
+        <h1>Welcome to Rent A Pet!</h1>
+        <p> If you love to interact with pets like we do, you should enjoy looking around this site.
+          Take a look at our Pet Profiles and take the opportunity to complete our survey. </p>
+        <h2>Our Featured Pets</h2>
+        <div id="image"> <img src="../Images/Fullsize/Pet1Lg.jpg" alt="Featured pet" id="theImage">
+          <p id="bottomText">Woman and Small Dog</p>
+        </div>
+        <div id="thumbs"> <img src="../Images/Thumbnails/Pet1Sm.jpg" alt="Woman and Small Dog thumbnail" onclick="swapImage(0)"> <img src="../Images/Thumbnails/Pig1Sm.jpg" alt="Pot Belly Pig thumbnail" onclick="swapImage(1)"> <img src="../Images/Thumbnails/CatandDogSm.jpg" alt="Cat and Dog Together thumbnail" onclick="swapImage(2)"> <img src="../Images/Thumbnails/HuntingDogsSm.jpg" alt="Two Dogs Portrait thumbnail" onclick="swapImage(3)"> </div>
+        <h2>Featured Tribute</h2>
+        <img src="../Images/GermanShephard2.jpg" alt="German Shepherd tribute" id="tributeImage">
+        <p> As a college student, I couldn’t own a dog, but Rent A Pet gave me the chance.
+          I bonded with Kamaikaze, a German Shepherd who loves running and Frisbee.
+          He even helped me meet my fiancée. <a href="../Tributes.html">more &gt;&gt;</a> </p>
+        <!-- TemplateEndEditable --></article>
+    </section>
+
+    <footer>
+        <p>
+            Webmaster:
+            <a href="mailto:10848551@uvu.edu">10848551@uvu.edu</a>
+        </p>
+        <p>This web site has been created solely for educational purposes.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

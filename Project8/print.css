@@ -1,0 +1,17 @@
+﻿body {
+    background: white;
+    color: black;
+    font-family: serif;
+}
+
+nav, footer {
+    display: none;
+}
+
+article {
+    width: 95%;
+}
+
+header, section {
+    width: 100%;
+}
