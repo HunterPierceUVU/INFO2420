@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Practice 6</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .schedule {
+            margin: auto;
+            width: 550px;
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        caption {
+            color: #003300;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .time {
+            background-color: #CCCCCC;
+            width: 25%;
+        }
+
+        .days {
+            width: 15%;
+        }
+
+        .dayheading {
+            background-color: #99FF66;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="center">
+        <table class="schedule">
+            <caption>My Class Schedule</caption>
+
+            <colgroup class="time"></colgroup>
+            <colgroup class="days" span="5"></colgroup>
+
+            <tr>
+                <th>Time</th>
+                <th class="dayheading">Monday</th>
+                <th class="dayheading">Tuesday</th>
+                <th class="dayheading">Wednesday</th>
+                <th class="dayheading">Thursday</th>
+                <th class="dayheading">Friday</th>
+            </tr>
+
+            <tr>
+                <th>8:00 - 9:00</th>
+                <td>Math</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Science</td>
+            </tr>
+
+            <tr>
+                <th>9:00 - 10:00</th>
+                <td>History</td>
+                <td rowspan="2">Computer Lab</td>
+                <td>History</td>
+                <td rowspan="2">Computer Lab</td>
+                <td>Art</td>
+            </tr>
+
+            <tr>
+                <th>10:00 - 11:00</th>
+                <td>Science</td>
+                <td>Science</td>
+                <td>Music</td>
+            </tr>
+
+            <tr>
+                <th>11:00 - 12:00</th>
+                <td colspan="5">Lunch</td>
+            </tr>
+
+            <tr>
+                <th>12:00 - 1:00</th>
+                <td>English</td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>Physical Education</td>
+            </tr>
+
+            <tr>
+                <th>1:00 - 2:00</th>
+                <td>Study Hall</td>
+                <td>History</td>
+                <td>Study Hall</td>
+                <td>History</td>
+                <td>Free Period</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
